@@ -1,0 +1,65 @@
+:root {
+  --clr-text: #333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#main {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+  color: var(--clr-text);
+  background: #eee;
+  margin: 2.3rem 0.5rem;
+  padding: 0.1rem;
+  line-height: 1.5;
+}
+
+/* header */
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* figure */
+
+#img-div {
+  text-align: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  margin: 2rem 0 1rem 0;
+}
+
+/* tribute-info section */
+
+#tribute-info h3,
+#tribute-info blockquote{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#tribute-info ul,
+#tribute-info blockquote {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#tribute-info ul li {
+  margin: 1rem 0;
+}
