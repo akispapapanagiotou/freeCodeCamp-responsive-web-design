@@ -1,0 +1,261 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* custom variables */
+:root {
+  --clr-yellow: #f1c40f;
+  --clr-orange: darkorange;
+}
+
+/* reset */
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global styles */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+
+.btn {
+  font-family: Arial, sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-yellow);
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 4.5rem;
+  background-color: #eee;
+}
+
+#header img {
+  width: 20rem;
+  margin-left: 1.5rem;
+}
+
+#header #nav-bar ul{
+  display: flex;
+  list-style-type: none;
+}
+
+#header #nav-bar ul li {
+  margin-right: 8.5rem;
+}
+
+#header #nav-bar ul li a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: black;
+  text-decoration: none;
+}
+
+/* hero */
+.hero {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero form input {
+  margin-top: 1rem;
+}
+
+.hero form #email {
+  display: block;
+  padding: 0.2rem 0.6rem;
+  width: 20rem;
+}
+
+.hero form #submit {
+  font-weight: 900;
+}
+
+/* features */
+#features {
+  margin: 4rem auto 4rem auto;
+  width: 60%;
+}
+
+.feature {
+  display: flex;
+  margin: 3rem 0;
+}
+
+.feature .icon {
+  color: var(--clr-orange);
+  font-size: 3rem;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+}
+
+/* how it works */
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* pricing */
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 4rem auto 0 auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0.8rem;
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: calc(100% / 3);
+}
+
+.product p {
+  background-color: #ddd;
+  color: black;
+  padding: 1rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product h2 {
+  margin-top: 1rem;
+}
+
+.product ul {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.product ul li {
+  margin: 0.5rem;
+}
+
+.product button {
+  margin: 1rem 0;
+}
+
+/* footer */
+footer {
+  margin-top: 4rem;
+  background-color: #ddd;
+  padding: 1.5px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+
+footer ul li a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: black;
+  text-decoration: none;
+}
+
+footer span {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
