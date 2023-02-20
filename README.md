@@ -13,5 +13,5 @@ Technical Documentation Page: https://fcc-technicaldocumentationpage.netlify.app
 Product Landing Page: https://fcc-project-product-landing-page.netlify.app/ <br />
 Personal Portfolio Webpage: https://freecc-personal-portfolio-webpage.netlify.app/
 ## Built with:
-* HTML5
+* HTML
 * CSS
